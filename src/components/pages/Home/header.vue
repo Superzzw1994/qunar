@@ -5,12 +5,16 @@
     </div>
     <div :class="$style.h_center"><i class="iconfont">&#xe632;</i> 输入城市/景点/游玩主题</div>
     <router-link to="/city">
-      <div :class="$style.h_right">城市<i class="iconfont">&#xe64a;</i></div>
+      <div :class="$style.h_right">{{this.city}}<i class="iconfont">&#xe64a;</i></div>
     </router-link>
   </div>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
+  computed: {
+    ...mapState(['city'])
+  }
 }
 </script>
 <style lang="scss" module>
@@ -48,6 +52,7 @@ export default {
   float:right;
   text-align: center;
   font-size:28px;
+  color: #fff;
   i{
     font-size:24px;
     margin-left:4px;

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import FastClick from 'fastclick'
 import axios from 'axios'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -22,6 +23,7 @@ new Vue({
   el: '#app',
   router,
   axios,
+  store,
   components: { App },
   template: '<App/>'
 })

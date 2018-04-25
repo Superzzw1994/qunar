@@ -7,7 +7,7 @@
   <div :class="$style.hot" v-for="(items, key) of cities" :key ="key" :ref="key">
       <h1>{{key}}</h1>
       <ul>
-        <li v-for="item in items" :key ="item.id">{{item.name}}</li>
+        <li v-for="item in items" :key ="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
       </ul>
   </div>
 </div>
@@ -20,6 +20,7 @@ import hotcity from './hotcity'
 import citypick from './citypick'
 // import citycontent from './citycontent'
 import Bscroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 export default {
   components: {
     hotcity: hotcity,
@@ -47,6 +48,13 @@ export default {
     handleLetterChange (res) {
       console.log(res)
       this.letter = res
+    },
+    ...mapMutations({
+      changeCity: 'changeCity'
+    }),
+    handleCityClick (city) {
+      this.changeCity(city)
+      this.$router.push('/')
     }
   },
   watch: {

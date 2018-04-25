@@ -3,13 +3,18 @@
     <router-link to="/" :class="$style.back">
       <i class="iconfont">&#xe624;</i>
     </router-link>
-    <h2>城市选择</h2>
+    <h2>{{this.currentCity}}</h2>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
+  }
 }
 </script>
 

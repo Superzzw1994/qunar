@@ -3,7 +3,7 @@
     <input placeholder="请输入城市名或拼音" v-model="result">
     <div :class="$style.searchContent" ref="search" v-show="result">
       <ul>
-        <li v-for="item of list" :key="item.id">
+        <li v-for="item of list" :key="item.id" @click="handleCityClick(item.name)">
           {{item.name}}
         </li>
         <li v-show="isNoData">没有获取到数据</li>
@@ -14,6 +14,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 export default {
   props: {
     cities: {
@@ -33,6 +34,15 @@ export default {
       result: '',
       timer: null,
       list: []
+    }
+  },
+  methods: {
+    ...mapMutations({
+      changeCity: 'changeCity'
+    }),
+    handleCityClick (city) {
+      this.changeCity(city)
+      this.$router.push('/')
     }
   },
   watch: {

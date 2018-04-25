@@ -2,7 +2,7 @@
     <div :class="$style.hot">
       <h1>热门城市</h1>
       <ul v-if="hotcity.length">
-        <li v-for="item in hotcity" :key ="item.id">{{item.name}}</li>
+        <li v-for="item in hotcity" :key ="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
       </ul>
     </div>
 </template>
@@ -14,6 +14,12 @@ export default {
       default () {
         return []
       }
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('/')
     }
   }
 }
@@ -32,13 +38,13 @@ export default {
     position: relative;
     overflow: hidden;
     &:before {
-    content: '';
-    position: absolute;
-    width: 33.33333%;
-    left: 33.33333%;
-    height: 100%;
-    border-left: .02rem solid #ddd;
-    border-right: .02rem solid #ddd;
+    content: ''!important;
+    position: absolute!important;
+    width: 33.33333%!important;
+    left: 33.33333%!important;
+    height: 100%!important;
+    border-left: .02rem solid #ddd!important;
+    border-right: .02rem solid #ddd!important;
     }
     li{
       float:left;
