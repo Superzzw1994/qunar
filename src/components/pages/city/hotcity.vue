@@ -40,8 +40,15 @@ export default {
     &:before {
     content: ''!important;
     position: absolute!important;
-    width: 33.33333%!important;
     left: 33.33333%!important;
+    height: 100%!important;
+    border-left: .02rem solid #ddd!important;
+    border-right: .02rem solid #ddd!important;
+    }
+    &:after {
+    content: ''!important;
+    position: absolute!important;
+    left: 66.66666%!important;
     height: 100%!important;
     border-left: .02rem solid #ddd!important;
     border-right: .02rem solid #ddd!important;

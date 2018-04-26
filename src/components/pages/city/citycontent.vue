@@ -59,7 +59,6 @@ export default {
     &:before {
     content: '';
     position: absolute;
-    width: 25%;
     left: 25%;
     height: 100%;
     border-left: .02rem solid #ddd;
@@ -68,7 +67,6 @@ export default {
     &:after{
       content: '';
       position: absolute;
-      width: 10%;
       left: 75%;
       height: 100%;
       border-left: .02rem solid #ddd;
@@ -82,6 +80,14 @@ export default {
       font-size: 28px;
       color: #212121;
       border-bottom: .02rem solid #ddd;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        border-left: .02rem solid #ddd;
+        border-right: .02rem solid #ddd;
+      }
     }
   }
 }
