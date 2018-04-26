@@ -8,6 +8,7 @@
 </div>
 </template>
 <script>
+import { mapState } from 'vuex'
 import header from './header'
 import Hswiper from './Hswiper'
 import icons from './icons'
@@ -20,6 +21,11 @@ export default {
     icons: icons,
     recommend: recommend,
     weekend: weekend
+  },
+  computed: {
+    ...mapState({
+      city: 'city'
+    })
   }
 }
 </script>

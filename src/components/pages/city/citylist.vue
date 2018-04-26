@@ -34,7 +34,9 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    this.scroll = new Bscroll(this.$refs.wrapper, {
+      click: true
+    })
     const that = this
     this.$http.get('/static/city.json').then(
       function (res) {

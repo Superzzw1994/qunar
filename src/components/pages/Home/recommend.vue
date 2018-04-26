@@ -5,7 +5,7 @@
       <span>猜你喜欢</span>
     </div>
     <ul>
-      <li :class="$style.item" v-for="(item, index) in recommend" :key="index">
+      <router-link tag="li" :class="$style.item" v-for="(item, index) in recommend" :key="index" :to="'/detail/' + item.id">
         <div :class="$style.imgwrapper">
           <img :src="item.url" alt="" />
         </div>
@@ -19,7 +19,7 @@
             <span :class="$style.address">{{item.address}}</span>
           </div>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -41,6 +41,10 @@ export default {
 }
 </script>
 <style lang="scss" module>
+a{
+  text-decoration: none;
+  color:#fff
+}
 .recommend{
   background-color: #fff;
 }

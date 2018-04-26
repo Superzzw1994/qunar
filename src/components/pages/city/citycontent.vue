@@ -27,7 +27,9 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.content)
+    this.scroll = new Bscroll(this.$refs.content, {
+      click: true
+    })
   },
   watch: {
     letter () {

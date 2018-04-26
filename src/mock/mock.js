@@ -85,70 +85,80 @@ const data = Mock.mock('/api', {
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 1
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 2
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 3
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 4
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 5
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 6
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 7
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 8
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 9
     },
     {
       url: 'http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg',
       title: '世界花卉大观园',
       comment: '12345',
       num: 34,
-      address: '昌平区'
+      address: '昌平区',
+      id: 10
     }
   ],
   weekend: [
@@ -171,6 +181,50 @@ const data = Mock.mock('/api', {
       url: 'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
       name: '寻找北京的皇城范儿',
       desc: '数百年的宫廷庙宇，至今依旧威严霸气'
+    }
+  ],
+  list: [
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/23/237893a0a205a242a3.img.jpg_350x240_5a82f44e.jpg'
+    },
+    {
+      src: 'http://img1.qunarzz.com/sight/p0/1703/d9/d973689407e9719a3.img.jpg_350x240_37c47119.jpg'
     }
   ]
 })
